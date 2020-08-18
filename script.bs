@@ -1,0 +1,20 @@
+1
+OP_NUMEQUAL
+
+OP_IF
+    OP_SHA256
+    <32-byte redeem code hash>
+    OP_EQUALVERIFY
+OP_ELSE
+    OP_DUP
+    OP_HASH160
+    <myPaymail public key hash>
+    OP_EQUALVERIFY
+    OP_CHECKSIGVERIFY
+OP_ENDIF
+
+OP_DUP
+OP_HASH160
+<Shared key public key hash>
+OP_EQUALVERIFY
+OP_CHECKSIG

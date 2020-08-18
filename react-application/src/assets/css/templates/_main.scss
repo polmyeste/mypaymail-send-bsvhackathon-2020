@@ -1,0 +1,65 @@
+.social-icon {
+  a{
+    height: 45px;
+    width: 45px;
+    border: 1px solid $primary-color;
+    border-radius: 50%;
+    line-height: 45px;
+    text-align: center;
+    display: block;
+    color: $primary-color;
+    &:hover{
+      background: $primary-color;
+      color: $white;
+    }
+  }
+}
+
+.currency-input {
+  justify-content: center;
+  border: none;
+  text-align: center;
+  outline-width: 0;
+}
+
+.logo {
+  width: 35px;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+  background-color: $white;
+}
+
+#content-wrapper {
+  padding-bottom: 100px;
+}
+
+#footer {
+  padding: 20px;
+}
+
+.currency-select {
+  width: 80px;
+}
+
+.moneybutton {
+  max-width: 160px;
+}
+
+.button {
+  color: $white;
+  background-color: $primary-color;
+  border-color: $primary-color;
+  padding: 12px 20px;
+
+  &:active,
+  &:hover,
+  &.focus,
+  &.active {
+    border-color: $primary-color;
+    background-color: $primary-color;
+    color: $white;
+  }
+}
